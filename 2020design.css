@@ -45,6 +45,10 @@ li a:hover:not(.active) {
   background-color: #4CAF50;
 }
 
+.red_active{
+  background-color: #942020;
+}
+
 li a:hover, .dropdown:hover .dropbtn {
   background-color: #b5b5b5;
 }
