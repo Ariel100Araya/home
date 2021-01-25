@@ -17,15 +17,51 @@
     <body>
         <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
             <div class="w3-display-middle">
-              <h1 class="w3-jumbo w3-animate-top white">Your invited</h1>
+              <h1 class="w3-jumbo w3-animate-top white w3-center" id="titleText"></h1>
+              <h4 class="w3-animate-top white w3-center" id="countDown"></h4>
             </div>
             </div>
         </div>
+        <script>
+              // Javascript Stuff
+                var countDownDate = new Date("Feb 10, 2021 16:00:00").getTime();
+                
+                var x = setInterval(function() {
+                
+                  var now = new Date().getTime();
+                    
+                  var distance = countDownDate - now;
+                    
+                  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                    // Countdown
+                  document.getElementById("countDown").innerHTML = days + " days " + hours + " hours " + minutes + " minutes " + seconds + " seconds ";
+                  // Meeting link for Google Meet
+                    document.getElementById("meetingText").innerHTML = "";
+                      
+                    if (distance < 0) {
+                      clearInterval(x);
+                      document.getElementById("meetingText").innerHTML = "Go to the Meeting >";
+                    }
+                    //Title
+                    document.getElementById("titleText").innerHTML = "Your Invited!";
+                      
+                    if (distance < 0) {
+                      clearInterval(x);
+                      document.getElementById("titleText").innerHTML = "The meeting already started!";
+                    }
+                     }, 1000);
+                </script>
         <br>
         <h1 class="w3-center">Hi, your invited!</h1>
         <br>
-        <h5 class="w3-center">On an undesided date, we will have a Google Meet with a few friends. Your invited to go! <br>When the Day arrives, a button will be below that will send you directly to the Google Meet</h5>
+        <h5 class="w3-center">We will have a Google Meet with a few friends. Your invited to go! <br>On, a button will be below that will send you directly to the Google Meet</h5>
         <br>
+        <h3 class="w3-center">Keep the Date! : February 10th, 2021 at 4 PM</h3>
+        <br>
+        <p class="w3-center"><a class="w3-center" id="meetingText" href="https://meet.google.com/fgd-vucx-qiw"></a></p>
         <br>
         <h3 class="w3-center">(c) 2021 Ariel Araya</h3>
         <br>
