@@ -1,46 +1,82 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="Simple.css">
-        <link rel = "icon" href = "Computer.png" type = "image/x-icon">
-        <title>Projects | Ariel Araya</title>
-        <style>
-            body,h1 {font-family: "Raleway", sans-serif}
-            body, html {height: 100%}
-            .bgimg {
-              background-image: url('forestbridge.jpg');
-              min-height: 100%;
-              background-position: center;
-              background-size: cover;
-            }
-            </style>
-    </head>
-    <body>
-        <div class="w3-top">
-        <div class="w3-bar white">
-            <a href="index.html" class="w3-bar-item w3-button w3-hide-small">Home</a>
-            <a href="projects.html" class="w3-bar-item w3-button w3-hide-small">Projects</a>
-            <a href="downloads.html" class="w3-bar-item w3-button w3-hide-small">Downloads</a>
-            <a href="specialevent.html" class="w3-bar-item w3-button w3-hide-small">Special Event</a>
-        </div>
-        </div>
-        <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
-            <div class="w3-display-middle">
-              <h1 class="w3-jumbo w3-animate-top white">Projects</h1>
-              <hr class="w3-border-grey" style="margin:auto;width:40%">
-              <p>All of the ongoing projects I am doing.</p>
-            </div>
-            </div>
-        </div>
-        <br>
-        <h1 class="w3-center"><i>To be announced...</i></h1>
-        <p class="w3-center">Version 0</p>
-        <br>
-        <h5 class="w3-center"></h5>
-        <p class="w3-center"><a href="https://ariel100araya.github.io/home/specialevent.html">Go to the event page</a></p>
-        <br>
-        <hr class="w3-border-grey" style="margin:auto;width:40%">
-        <h1 class="w3-center">Simple.css</h1>
+<title>Projects | Ariel Araya</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="Simple.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<script src="https://kit.fontawesome.com/7732b860ea.js"; crossorigin="anonymous"></script>
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bgimg-1 {
+  background-image: url('img/forestbridge.jpg');
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-image: url("woodplanks.jpg");
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url("Bricks.jpg");
+  min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+</style>
+<body>
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="index.html" class="w3-bar-item w3-button">Ariel Araya</a>
+    <a href="projects.html" class="w3-bar-item w3-button">Projects</a>
+    <a href="downloads.html" class="w3-bar-item w3-button">Downloads</a>
+    <a href="dark/index.html" class="w3-bar-item w3-button">Dark Mode</a>
+  </div>
+</div>
+<!-- Navbar on small screens -->
+<div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+  <a href="index.html" class="w3-bar-item w3-button">Ariel Araya</a>
+  <a href="projects.html" class="w3-bar-item w3-button">Projects</a>
+  <a href="downloads.html" class="w3-bar-item w3-button">Downloads</a>
+  <a href="https://ariel100araya.github.io/home/index.html" class="w3-bar-item w3-button">Light Mode</a>
+</div>
+</div>
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Projects</span>
+  </div>
+</div>
+<!--Text-->
+<br>
+<h1 class="w3-center">Simple.css</h1>
         <p class="w3-center">Version 2.1</p>
         <br>
         <h5 class="w3-center">Simple.css is a CSS framework that creates a modern design to webpages.<br> It uses Bootstrap and W3.css and introduces themes such as a metalic, areo(r), and luna (r).<br> Completly open sourced and used on this website!</h5>
@@ -48,20 +84,77 @@
         <br>
         <hr class="w3-border-grey" style="margin:auto;width:40%">
         <br>
-        <h1 class="w3-center">Lime Classes</h1>
-        <p class="w3-center">Version 0.1 (alpha)</p>
+        <h1 class="w3-center">Lime Tags</h1>
+        <p class="w3-center"></p>
         <br>
-        <h5 class="w3-center">Lime Classes is a learning management system created for the students.<br> It was created with privacy and poor to no internet connection in mind.<br> It enables students to turn in their work offline and even edit offline and when they get connected again it will submit to the teacher.</h5>
-        <p class="w3-center" href="#">Coming soon</p>
+        <h5 class="w3-center">Tap a tag to access your social media, gather payments, and more! All from a simple tap!</h5>
+        <p class="w3-center"><a href="https://ariel100araya.github.io/Lime/Lime-Tags/index.html">Go to the project page</a></p>
         <br>
         <hr class="w3-border-grey" style="margin:auto;width:40%">
         <br>
-        <h1 class="w3-center">ATC</h1>
-        <p class="w3-center">Version 0.217</p>
+        <h1 class="w3-center">Lime Network for Work</h1>
+        <p class="w3-center"></p>
         <br>
-        <h5 class="w3-center">ATC is a Open Sourced Operating System powered by C and Assembly.<br> It can be installed on computers that have very low memory and can run natively on Linux and MacOS</h5>
-        <p class="w3-center">Coming Soon<p>
+        <h5 class="w3-center">Look professional with your own website, bulk offers and more!</h5>
+        <p class="w3-center"><a href="https://ariel100araya.github.io/Lime/Work/index.html"></a>Coming Soon</p>
         <br>
-    </body>
-</html>
+        <hr class="w3-border-grey" style="margin:auto;width:40%">
+        <br>
+        <h1 class="w3-center">Lime Network websites</h1>
+        <p class="w3-center"></p>
+        <br>
+        <h5 class="w3-center">Look professional with your own website and connect it to your Lime Tag, Soical Media, and more!</h5>
+        <p class="w3-center"><a href="https://ariel100araya.github.io/Lime/Personal/index.html"></a>Coming Soon</p>
+        <br>
+<div class="footer w3-center">
+    <h1>(c) 2021 Ariel Araya</h1>
+</div>
 
+<!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+<span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+<div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+  <img id="img01" class="w3-image">
+  <p id="caption" class="w3-opacity w3-large"></p>
+</div>
+</div>
+<!--Sideshow scripts-->
+<script>
+  w3.slideshow(".nature", 3000);
+</script>
+<!--Modals and stuff-->
+<script>
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
