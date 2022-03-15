@@ -1,0 +1,71 @@
+body {
+	background-color: #FFF;
+	color: #333;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	text-align: center;
+	font-size: 15px;
+}
+
+@media (min-width: 650px) {
+	body {
+		font-size: 22px;
+	}
+}
+
+h1 {
+	font-size: 1.7em;
+	font-weight: bold;
+}
+
+#calculator {
+	font-family: monospace;
+}
+
+#calculator input {
+	outline: none;
+	border: 1px solid #CCC;
+	border-radius: 0; /* iOS Safari gives inputs rounded corners*/
+}
+
+#calculator input:invalid {
+	border-color: #F00;
+}
+
+.input {
+	width: 1ch;
+}
+
+.input:focus, .input:hover {
+	outline: none;
+	border: 1px solid #000;
+}
+
+/* hide the weird little up/down ticks on number fields in some browsers */
+input[type='number'] {
+	-moz-appearance:textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+}
+
+#implies {
+	font-size: 1.6em;
+	margin: 10px;
+}
+
+.result {
+	width: 6ch;
+}
+
+#footer {
+	font-size: 11px;
+	color: #999;
+	margin: 25px;
+}
+#footer a {
+	color: #666;
+	text-decoration: none;
+}
