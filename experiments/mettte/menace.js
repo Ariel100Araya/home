@@ -495,7 +495,7 @@ var menace = {
    }
    
    function show_menace(n){
-       var menacename = "MENACE"
+       var menacename = "METTTE"
        if(n==2){
            menacename += "2"
        }
