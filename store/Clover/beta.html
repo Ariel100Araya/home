@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<title>Clover Beta | Clover</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="Simple.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<script src="https://kit.fontawesome.com/7732b860ea.js"; crossorigin="anonymous"></script>
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bgimg-1 {
+  background-image: url('Exampleimg1.png');
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-image: url("woodplanks.jpg");
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url("Bricks.jpg");
+  min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+</style>
+<!-- Google Analytics and Google Ads -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BLPBF5JSNZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BLPBF5JSNZ');
+</script>
+<body>
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="index.html" class="w3-bar-item w3-button">Clover</a>
+    <a href="#" class="w3-bar-item w3-button">Early Access</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Early access</span>
+  </div>
+</div>
+<!--Text-->
+<div class="w3-center">
+    <br>
+      <h1>Open. Reflect. Repeat.</h1>
+      <br>
+      <h4>Early Access on May 20th.</h4>
+      <p id="timer"></p>
+      <br>
+      <img src="img1.png">
+      <br>
+      <br>
+      <h3>Breathe</h3>
+      <h4>Go through a journey.</h4>
+      <br> 
+      <img src="img2.png">
+      <br>
+      <br>
+      <h5>Go through a series of short one minute stories.</h5>
+      <br>
+      <h3>Reflect</h3>
+      <h4>Think and go</h4>
+      <br> 
+      <img src="img3.png">
+      <br>
+      <br>
+      <h5>Journal how your day went.</h5>
+      <br>
+  </div>
+<div class="w3-center">
+  <br>
+    <h4>Check back May 20th</h4>
+    <div class="w3-center">
+        <button class="w3-btn w3-indego w3-round-xxlarge"><a href="beta.html">Coming soon</a></button>
+      </div>
+    <br>
+</div>
+<br>
+<br>
+<div class="footer w3-center">
+    <h1>Ariel Araya - Copyright 2022</h1>
+    <p>Pictues shown could vary from the product released. This version is a prerelease, some parts are not finished yet (but I'm working on it)!</p>
+</div>
+
+<!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+<script>
+  // Set the date we're counting down to
+  var countDownDate = new Date("May 19, 2022 23:59:59").getTime();
+  
+  // Update the count down every 1 second
+  var x = setInterval(function() {
+  
+    // Get today's date and time
+    var now = new Date().getTime();
+      
+    // Find the distance between now and the count down date
+    var distance = countDownDate - now;
+      
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      
+    // Output the result in an element with id="demo"
+    document.getElementById("timer").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+      
+    // If the count down is over, write some text 
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("timer").innerHTML = "Get the beta below.";
+    }
+  }, 1000);
+  </script>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+<span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+<div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+  <img id="img01" class="w3-image">
+  <p id="caption" class="w3-opacity w3-large"></p>
+</div>
+</div>
+<!--Sideshow scripts-->
+<script>
+  w3.slideshow(".nature", 3000);
+</script>
+<!--Modals and stuff-->
+<script>
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
