@@ -1,160 +1,61 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-<title>Welcome | Ariel Araya</title>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="Simple.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<style>
-		body {
-			font: 16px -apple-system, sans-serif;
-			line-height: 1.333em;
+<title>Quick Links | Student Center</title>
+<link href="Simple.css" type="text/css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+	<style>
+		h1,h2,h3,h4,h5,h6,p {
+			font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
 		}
-		header {
-			text-align: center;
-		}
-    </style>
-<script src="https://kit.fontawesome.com/7732b860ea.js"; crossorigin="anonymous"></script>
-<script src="https://www.w3schools.com/lib/w3.js"></script>
-
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
-body, html {
-  height: 100%;
-  line-height: 1.8;
-}
-
-.bgimg-1, .bgimg-2, .bgimg-3 {
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.bgimg-1 {
-  background-image: url('img/yourgonnalovethis.jpeg');
-  min-height: 100%;
-}
-
-.bgimg-2 {
-  background-image: url("woodplanks.jpg");
-  min-height: 400px;
-}
-
-.bgimg-3 {
-  background-image: url("Bricks.jpg");
-  min-height: 400px;
-}
-
-.w3-wide {letter-spacing: 10px;}
-.w3-hover-opacity {cursor: pointer;}
-
-@media only screen and (max-device-width: 1600px) {
-  .bgimg-1, .bgimg-2, .bgimg-3 {
-    background-attachment: scroll;
-    min-height: 400px;
-  }
-}
-
-:root {
-                color-scheme: light dark;
-            }
-</style>
-<!-- Google Analytics and Google Ads -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-BLPBF5JSNZ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-BLPBF5JSNZ');
-</script>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6674247288902049"
-     crossorigin="anonymous"></script>
+	</style>
 </head>
+
 <body>
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar" id="myNavbar">
-    <a href="#" class="w3-bar-item w3-button white">Ariel Araya</a>
-    <a href="projects.html" class="w3-bar-item w3-button">Projects</a>
-    <a href="downloads.html" class="w3-bar-item w3-button">Downloads</a>
-    <a href="privacy.html" class="w3-bar-item w3-button">Privacy</a>
-  </div>
-</div>
-<!-- First Parallax Image with Logo Text -->
-<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
-  <div class="w3-display-middle" style="white-space:nowrap;">
-    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Welcome!</span>
-  </div>
-</div>
-<!--Text-->
-<br>
-<h1 class="w3-center">Hi, my name is Ariel</h1>
-        <br>
-        <h5 class="w3-center">I am a Web/Software Developer creating projects that may one day, change the world.</h5>
-        <br>
-        <br>
-        <h1 class="w3-center">On going projects</h1>
-        <br>
-        <h5 class="w3-center">Right here are my projects. All of them!</h5>
-        <p class="w3-center"><a href="projects.html">Check out</a></p>
-        <br>
-        <h1 class="w3-center">Latest release: Quadratics Calculator</h1>
-        <br>
-        <h5 class="w3-center">Tired of writing the Quadratic Formula? I got you covered.</h5>
-        <p class="w3-center"><a href="quadratics.arielaraya.xyz">Go to the Calculator</a></p>
-        <br>
-<div class="footer w3-center">
-    <h1>(c) 2022 Ariel Araya</h1>
-</div>
-
-<!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-
-
-<!-- Modal for full size images on click-->
-<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-<span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
-<div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-  <img id="img01" class="w3-image">
-  <p id="caption" class="w3-opacity w3-large"></p>
-</div>
-</div>
-<!--Sideshow scripts-->
-<script>
-  w3.slideshow(".nature", 3000);
-</script>
-<!--Modals and stuff-->
-<script>
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-
-// Change style of navbar on scroll
-window.onscroll = function() {myFunction()};
-function myFunction() {
-    var navbar = document.getElementById("myNavbar");
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
-    } else {
-        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
-    }
-}
-
-// Used to toggle the menu on small screens when clicking on the menu button
-function toggleFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
-</script>
-
+	<!--Modern Design, Made by Ariel-->
+	<!--You are able to use/modify this style as much as you'd like as long as you add the "Designed by Ariel" text at the bottom of your website OR add "Designed by Ariel" in a page-->
+	<div class="w3-container">
+		<br>
+		<h1 class="">Ariel Araya</h1>
+		<h2><a class="w3-text-grey" href="#">home. </a><a href="#" class="w3-text-grey">made by ariel. </a><a href="#" class="w3-text-grey">portfolio. </a></h2>
+	</div>
+	<br>
+	<img src="topic1.png" width="400">
+	<div class="w3-container">
+		<h4>Hi my name is Ariel. I am a Software/Web Developer and a certified Web Designer. My goal is to learn as much as a possibly can and make projects that could help everyone.</h4>
+	</div>
+	<img src="topic2.png" width="400">
+	<div class="w3-container">
+    <!-- About Section -->
+    <div class="w3-row w3-padding-64" id="about">
+      <div class="w3-col m6 w3-padding-large w3-hide-small">
+       <img src="clover.png" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="" height="50">
+      </div>
+      <div class="w3-col m6 w3-padding-large">
+        <h1 class="w3-center">Clover</h1><br>
+        <h5 class="w3-center">Now avalable on the App Store</h5>
+        <p class="w3-large">Clover is an app that allows you to Breathe, Reflect, and Journal your daily life. Breathe gives you a relaxing scenario that you can journey across, do a questionaire about your day with Reflect, and Write quick thoughts with Journal.</p>
+		<a href="downloads/modern.zip" class="w3-button w3-sand">Learn more about Clover.</a>
+      </div>
+    </div>
+	</div>
+	<img src="topic3.png" width="400">
+	<div class="w3-container">
+		<div class="w3-row w3-padding-64" id="about">
+      <div class="w3-col m6 w3-padding-large w3-hide-small">
+       <img src="clover.png" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="" height="50">
+      </div>
+      <div class="w3-col m6 w3-padding-large">
+        <h1 class="w3-center">Making better websites with Modern Design.</h1><br>
+        <h5 class="w3-center">November 16th, 2022</h5>
+        <p class="w3-large">Back in 2020, I made a CSS framework dubbed "Simple.css", with Simple, designs like these have been possible. I was inspired to do a design that helped with visablity, while still promoting creativity and adding color (like this website!). Oh and I made it open so that everyone could use it!</p>
+		<a href="downloads/modern.zip" class="w3-button w3-sand">See a template of Modern Design.</a>
+      </div>
+    </div>
+	</div>
+	</div>
 </body>
 </html>
