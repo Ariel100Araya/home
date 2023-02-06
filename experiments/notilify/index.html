@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--Credits to w3schools for w3.css, Google Fonts for the Raleway font, and Cloudflare/Font Awesome for font-awesome.min.css.-->
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<style>
+			.bigtext {
+				font-size: 40px;
+			}
+		</style>
+	</head>
+  <body class="w3-black">
+	<div>
+	  <div class="w3-container w3-animate-right">
+		<h6>NOTILIFY</h6>
+		<img src="navbarNotilify2.png" class="w3-image">
+	  </div>
+	</div>
+	<div class="w3-display-middle w3-animate-opacity">
+		<p>Please enter a long number:</p>
+		<input type="text" id="userInput" class="w3-button w3-light-grey" placeholder="Enter a long number">
+		<button onclick="convertToScientificNotation()" class="w3-button w3-dark-grey">go</button>
+    <h4 id="result" class="w3-center"></h4>
+	</div>
+    <script>
+      function convertToScientificNotation() {
+        let userInput = document.getElementById("userInput").value;
+        let number = parseFloat(userInput);
+        if (isNaN(number)) {
+          document.getElementById("result").innerHTML = "Invalid input";
+        } else {
+          let exponent = Math.floor(Math.log10(number));
+          let mantissa = number / Math.pow(10, exponent);
+          document.getElementById("result").innerHTML = mantissa.toPrecision(2) + " x 10^" + exponent;
+        }
+      }
+    </script>
+  </body>
+</html>
