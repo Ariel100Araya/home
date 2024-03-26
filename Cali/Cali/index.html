@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body {margin:0;}
+
+ul {
+  	list-style-type: none;
+  	margin: 0;
+  	padding: 0;
+  	overflow: hidden;
+  	background-color: #333;
+  	position: fixed;
+  	bottom: 0;
+  	width: 100%;
+  	background-color: #f3f3f3;
+}
+
+li {
+  	float: left;
+}
+
+li a {
+  	display: block;
+  	color: black;
+  	text-align: center;
+  	padding: 14px 16px;
+  	text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  	background-color: #ffffff;
+}
+
+.active {
+  	background-color: #EA947A;
+	color: white;
+}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('promoTitle2a.png');
+  min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("/w3images/parallax2.jpg");
+  min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("/w3images/parallax3.jpg");
+  min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+@media only screen and (max-width: 800px) {
+    .hide-pc{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .hide-mobile{
+        display: none;
+    }
+}
+</style>
+</head>
+<body class="w3-animate-opacity">
+<div class="hide-pc">
+<ul>
+  	<li><a class="active" href="#home">Cali - your next calendar</a></li>
+  	<li><a href="#about">Test on TestFlight</a></li>
+  	<li><a href="#about">Get on the App Store</a></li>
+	<li style="float:right"><a href="#about">Made by Ariel</a></li>
+</ul>
+
+<div class="w3-row w3-padding-64" id="about">
+          <img src="promoTitle2a.png" class="w3-image "/>
+
+      </div>
+<div class="w3-row w3-padding-64" id="about">
+          <img src="poster2.png" class="w3-image"/>
+
+      </div>
+<div class="w3-row w3-padding-64" id="about">
+          <img src="poster1.png" class="w3-image"/>
+
+      </div>
+
+<div class="w3-row w3-padding-64" id="about">
+          <img src="poster4.png" class="w3-image"/>
+
+      </div>
+<div class="w3-row w3-padding-64" id="about">
+          <img src="poster3.png" class="w3-image"/>
+
+      </div>
+
+<div class="w3-row w3-padding-64" id="about">
+          <img src="poster5.png" class="w3-image"/>
+
+      </div>
+
+<div class="w3-row w3-padding-64" id="about">
+          <img src="poster6.png" class="w3-image"/>
+
+      </div>
+
+<div class="w3-row w3-padding-64" id="about">
+          <img src="poster7.png" class="w3-image"/>
+
+      </div>
+
+<div class="w3-row w3-padding-64" id="about">
+          <img src="poster8.png" class="w3-image"/>
+
+      </div>
+
+<div class="w3-row w3-padding-64" id="about">
+          <img src="poster9.png" class="w3-image"/>
+
+      </div>
+
+<div class="w3-row w3-padding-64" id="about">
+          <img src="poster10.png" class="w3-image"/>
+
+      </div>
+</div>
+</div>
+<div class="hide-mobile">
+<div class="w3-bar active">
+  <div class="w3-bar-item w3-center">Cali</div>
+</div>
+<div class="w3-row w3-padding" id="about">
+          <img src="promoTitle2aM.png" class="w3-image "/>
+
+      </div>
+<div class="w3-row w3-padding-64" id="about">
+          <img src="posterM1.png" class="w3-image "/>
+
+      </div>
+<div class="w3-row w3-padding-64" id="about">
+          <img src="posterM2.png" class="w3-image"/>
+
+      </div>
+<div class="w3-row w3-padding-64" id="about">
+          <img src="posterM3.png" class="w3-image"/>
+
+      </div>
+
+<div class="w3-row w3-padding-64" id="about">
+          <img src="posterM4.png" class="w3-image"/>
+
+      </div>
+<div class="w3-row w3-padding-64" id="about">
+          <img src="posterM8.png" class="w3-image"/>
+
+      </div>
+
+<div class="w3-row w3-padding-64" id="about">
+          <img src="posterM5.png" class="w3-image"/>
+
+      </div>
+
+<div class="w3-row w3-padding-64" id="about">
+          <img src="posterM6.png" class="w3-image"/>
+
+      </div>
+
+<div class="w3-row w3-padding-64" id="about">
+          <img src="posterM7.png" class="w3-image"/>
+
+      </div>
+
+<div class="w3-row w3-padding-64" id="about">
+          <img src="posterM9.png" class="w3-image"/>
+
+      </div>
+
+
+
+</div>
+
+</body>
+</html>
+
+
